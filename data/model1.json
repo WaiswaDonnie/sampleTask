@@ -1,0 +1,24 @@
+{
+    "name": "Unique Hash",
+    "fields": {
+      "input1": {
+        "label": "Input 1",
+        "type": "string",
+        "readOnly": false,
+        "calculate": null
+      },
+      "input2": {
+        "label": "Input 2",
+        "type": "string",
+        "readOnly": false,
+        "calculate": null
+      },
+      "output": {
+        "label": "Output",
+        "type": "string",
+        "readOnly": true,
+        "calculate": "(sha256(input1 + '|' + input2))"
+      }
+    }
+  }
+  

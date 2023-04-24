@@ -1,0 +1,84 @@
+{
+    "name": "Statistical Summary",
+    "fields": {
+      "input1": {
+        "label": "Input 1",
+        "type": "number",
+        "readOnly": false,
+        "calculate": null
+      },
+      "input2": {
+        "label": "Input 2",
+        "type": "number",
+        "readOnly": false,
+        "calculate": null
+      },
+      "input3": {
+        "label": "Input 3",
+        "type": "number",
+        "readOnly": false,
+        "calculate": null
+      },
+      "input4": {
+        "label": "Input 4",
+        "type": "number",
+        "readOnly": false,
+        "calculate": null
+      },
+      "input5": {
+        "label": "Input 5",
+        "type": "number",
+        "readOnly": false,
+        "calculate": null
+      },
+      "input6": {
+        "label": "Input 6",
+        "type": "number",
+        "readOnly": false,
+        "calculate": null
+      },
+      "input7": {
+        "label": "Input 7",
+        "type": "number",
+        "readOnly": false,
+        "calculate": null
+      },
+      "input8": {
+        "label": "Input 8",
+        "type": "number",
+        "readOnly": false,
+        "calculate": null
+      },
+      "input9": {
+        "label": "Input 9",
+        "type": "number",
+        "readOnly": false,
+        "calculate": null
+      },
+      "input10": {
+        "label": "Input 10",
+        "type": "number",
+        "readOnly": false,
+        "calculate": null
+      },
+      "mean": {
+        "label": "Mean",
+        "type": "number",
+        "readOnly": true,
+        "calculate": "(input1 + input2 + input3 + input4 + input5 + input6 + input7 + input8 + input9 + input10) / 10"
+      },
+      "median": {
+        "label": "Median",
+        "type": "number",
+        "readOnly": true,
+        "calculate": "let sorted = [input1, input2, input3, input4, input5, input6, input7, input8, input9, input10].sort(); if (sorted.length % 2 === 0) { (sorted[sorted.length / 2 - 1] + sorted[sorted.length / 2]) / 2 } else { sorted[Math.floor(sorted.length / 2)] }"
+      },
+      "standardDeviation": {
+        "label": "Standard Deviation",
+        "type": "number",
+        "readOnly": true,
+        "calculate": "let mean = (input1 + input2 + input3 + input4 + input5 + input6 + input7 + input8 + input9 + input10) / 10; let variance = ((input1 - mean) ** 2 + (input2 - mean) ** 2 + (input3 - mean) ** 2 + (input4 - mean) ** 2 + (input5 - mean) ** 2 + (input6 - mean) ** 2 + (input7 - mean) ** 2 + (input8 - mean) ** 2 + (input9 - mean) ** 2 + (input10 - mean) ** 2) / 10; Math.sqrt(variance)"
+      }
+    }
+}
+  
